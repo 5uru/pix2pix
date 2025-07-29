@@ -14,7 +14,7 @@ optimizer_unet = nn.optim.Adam(nn.state.get_parameters(unet), lr=0.0002, b1=0.5,
 optimizer_discriminator = nn.optim.Adam(nn.state.get_parameters(discriminator), lr=0.0002, b1=0.5, b2=0.999)
 
 # Load dataset
-train_dataset, val_dataset = get_dataset(batch_size=32)
+train_dataset, val_dataset = get_dataset(batch_size=16)
 X_train, Y_train = train_dataset
 X_val, Y_val = val_dataset
 
